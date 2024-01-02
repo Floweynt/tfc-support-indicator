@@ -1,0 +1,5 @@
+{
+    "config.jade.plugin_tfc_support_indicator.support_indicator": "Support Indicator",
+    "tfc_support_indicator.supported": "Supported!",
+    "tfc_support_indicator.not_supported": "Unsupported, may trigger collapse!"
+}
