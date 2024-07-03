@@ -1,14 +1,15 @@
 package com.floweytf.tfcsupportindicator;
 
+import mcp.mobius.waila.api.IWailaClientRegistration;
+import mcp.mobius.waila.api.IWailaPlugin;
+import mcp.mobius.waila.api.TooltipPosition;
+import mcp.mobius.waila.api.WailaPlugin;
 import net.minecraft.world.level.block.Block;
-import snownee.jade.api.IWailaClientRegistration;
-import snownee.jade.api.IWailaPlugin;
-import snownee.jade.api.WailaPlugin;
 
 @WailaPlugin
 public class JadePlugin implements IWailaPlugin {
     @Override
     public void registerClient(IWailaClientRegistration registration) {
-        registration.registerBlockComponent(CollapseComponentProvider.INSTANCE, Block.class);
+        registration.registerComponentProvider(CollapseComponentProvider.INSTANCE, TooltipPosition.BODY, Block.class);
     }
 }
