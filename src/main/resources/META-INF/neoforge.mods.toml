@@ -1,23 +1,23 @@
 modLoader="javafml"
-loaderVersion="${loader_version_range}"
-license="${mod_license}"
+loaderVersion="[4,)"
+license="GPL-3.0-only"
 issueTrackerURL="https://github.com/Floweynt/tfc-support-indicator/issues"
 [[mods]]
 modId="${mod_id}"
 version="${mod_version}"
-displayName="${mod_name}"
-authors="${mod_authors}"
-description='''${mod_description}'''
+displayName="TFC Support Indicator"
+authors="Flowey"
+description="""Adds a tooltip in jade that tells you if a block is supported with a horizontal beam"""
 [[dependencies.${mod_id}]]
     modId="forge"
     mandatory=true
-    versionRange="${forge_version_range}"
+    versionRange="[${neo_version},)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.${mod_id}]]
     modId="minecraft"
     mandatory=true
-    versionRange="${minecraft_version_range}"
+    versionRange="[1.21,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.${mod_id}]]
