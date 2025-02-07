@@ -7,6 +7,7 @@ import mcp.mobius.waila.api.WailaPlugin;
 import net.minecraft.world.level.block.Block;
 
 @WailaPlugin
+@SuppressWarnings("UnstableApiUsage")
 public class JadePlugin implements IWailaPlugin {
     @Override
     public void registerClient(IWailaClientRegistration registration) {
