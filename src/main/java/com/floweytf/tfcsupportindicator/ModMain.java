@@ -1,6 +1,6 @@
 package com.floweytf.tfcsupportindicator;
 
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.fml.common.Mod;
 
 @Mod("tfc_support_indicator")
 public class ModMain {
