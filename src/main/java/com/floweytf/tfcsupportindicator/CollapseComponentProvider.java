@@ -41,7 +41,7 @@ public enum CollapseComponentProvider implements IComponentProvider {
                 pos.offset(-4, -2, -4),
                 pos.offset(4, 2, 4)
             ).stream()
-            .anyMatch(u -> CollapseRecipe.canStartCollapse(level, u));
+            .anyMatch(u -> CollapseRecipe.canStartCollapse(level, u) && !u.equals(pos));
 
         tooltip.add(isSupported ? SELF_SUPPORTED : SELF_UNSUPPORTED);
         tooltip.add(mightTriggerCollapse ? MIGHT_TRIGGER_COLLAPSE : WONT_TRIGGER_COLLAPSE);
